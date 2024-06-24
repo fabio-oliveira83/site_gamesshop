@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button      {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal; /*essas sessoes usam a mesma font-famly*/
+}
+
+body, input, textarea {
+    font-family: "Roboto", sans-serif; /*essas sessoes usam a mesma font-famly*/
+}
+
+header  {  /*estilizar o header é diferente de estilizar o header .container */
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li { /*estilizando os links*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+   }
+
+
+header nav li a { /*estilizando cor das fontes dos links*/
+    color: #ecf0f1;
+}
+
+.container { /*definindo tamanho max dos containers das paginas*/
+    max-width: 1280px;
+    width: 100%;  /*ocupa 100% da largura até chegar em 1280px*/
+    margin: auto;
+}
+
+header .container,
+section .container, 
+footer .container {/*definindo alinhamentos dos itens dos containers*/
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img { /*estiliza o tamaho da imagem*/
+    height: 24px;
+}
+
+.brands-list li { /*estiliza o tamanho o alinhamento dos itens da lista*/
+    display: inline;
+    margin-left: 8px;
+}
+
+section .container { /*começa o texto do canto direito*/
+    align-items: flex-start;
+}
+
+section { /* espaçamento entre as sections*/
+    padding: 24px 0;
+}
+
+section h2 { /* espaçamento entre o texto das sections*/
+    margin-bottom: 16px;
+}
+
+section { /*estiliza a cor da section*/
+    color: #182c61;
+}
+
+section p { /*estiliza paragrafo da section*/
+    margin-bottom: 8px;
+}
+
+.store-front { /*estiliza margem da foto da loja*/
+    margin-right: 32px;
+}
+
+.social-links img { /*estiliza o tamaho da imagem*/
+    height: 24px;
+}
+
+.social-links li { /*definindo alinhamento dos links */
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a { /*retira riscos embaixo das imagens dos links*/
+    text-decoration: none;
+}
+
+#contact .container { /*fixa container, não deixa agrupar somente ele na linha*/
+    display: block;
+}
+
+.contact-methods { /*alinha e define espaço entre os itens de contato */
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+button,
+textarea        { /*organiza os fomulario um embaixo do outro */
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {  /*não deixa o textare aumentar*/
+    resize: none;
+}
+
+section h3 { /*margem de baixo do texto h3*/
+    margin-bottom: 16px;
+}
+
+form button { /*estiliza botao*/
+    background-color: #182c61;
+    color: #ecf0f1;  
+    border: none; 
+    cursor: pointer; 
+}
+
+form button:hover { /*estiliza hover do botao*/
+    background-color: #3d569b;
+}
+
+input:focus, textarea:focus { /*destaca quando selecionado a caixa de texto ou o campo*/
+    outline-color: #182c61;
+}
+
+footer { /*estiliza o footer, background e padding*/
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;   
+}
